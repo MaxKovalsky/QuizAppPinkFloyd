@@ -1,0 +1,215 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.android.quizapppinkfloyd.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz App about Pink Floyd"
+            android:textColor="#616161"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="270dp"
+            android:src="@drawable/pinkfloyd" />
+
+        <TextView
+            android:id="@+id/question1"
+            style="@style/Questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. What is on the cover of the album Animals?" />
+
+        <CheckBox
+            android:id="@+id/q1a1"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="power station" />
+
+        <CheckBox
+            android:id="@+id/q1a2"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bats" />
+
+        <CheckBox
+            android:id="@+id/q1a3"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="flying pig" />
+
+        <TextView
+            android:id="@+id/question2"
+            style="@style/Questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. In which year was Pink Floyd was created?" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/q2a1"
+                style="@style/Answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1960" />
+
+            <RadioButton
+                android:id="@+id/q2a2"
+                style="@style/Answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1962" />
+
+            <RadioButton
+                android:id="@+id/q2a3"
+                style="@style/Answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1965" />
+
+            <RadioButton
+                android:id="@+id/q2a4"
+                style="@style/Answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1969" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question3"
+            style="@style/Questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Which album has the song Money?" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/q3a1"
+                style="@style/Answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Piper of the Gates" />
+
+            <RadioButton
+                android:id="@+id/q3a2"
+                style="@style/Answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ummagumma" />
+
+            <RadioButton
+                android:id="@+id/q3a3"
+                style="@style/Answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Dark Side of the Moon" />
+
+            <RadioButton
+                android:id="@+id/q3a4"
+                style="@style/Answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Whish You Were Here" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question4"
+            style="@style/Questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Which city does the Pink Floyd come from?" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/q4a1"
+                style="@style/Answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="London" />
+
+            <RadioButton
+                android:id="@+id/q4a2"
+                style="@style/Answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cambridge" />
+
+            <RadioButton
+                android:id="@+id/q4a3"
+                style="@style/Answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Liverpool" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question5"
+            style="@style/Questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Did Pink Floyd play in Pompeii?" />
+
+        <EditText
+            android:id="@+id/pompei"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Yes or no"
+            android:maxLines="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/final_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textColor="#DD2C00"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button_score"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="#4FC3F7"
+                android:onClick="showScore"
+                android:text="show scores"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
